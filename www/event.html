@@ -1,0 +1,39 @@
+<ion-view title="Event" ng-init="init()">
+  <ion-content>
+    <div ng-hide="entry" class="spinner-wrapper">
+      <ion-spinner icon="ripple"></ion-spinner>
+    </div>
+
+    <div class="card" ng-show="entry">
+      <div class="item item-text-wrap">
+        <div class="evt-title padding-top">{{entry.fields.title}}</div>
+        <p class="padding-top padding-bottom">{{entry.fields.description}}</p>
+      </div>
+
+      <div class="padding-5 text-center">
+        <button class="button button-positive button-clear icon-left ion-android-calendar" ng-click="addToCalendar()">
+          Add to Calendar
+        </button>
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-android-time"></i>
+        <p>Start Time</p>
+        {{entry.fields.output.startTime}}
+        <p class="padding-top">End Time</p>
+        {{entry.fields.output.endTime}}
+      </div>
+
+      <div class="item item-icon-left item-text-wrap">
+        <i class="icon ion-location"></i>
+        <p>Address</p>
+        {{entry.fields.address}}
+      </div>
+
+      <div class="item">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="placeholder">&nbsp;</div>
+  </ion-content>
+</ion-view>

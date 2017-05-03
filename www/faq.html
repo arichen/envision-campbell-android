@@ -1,0 +1,17 @@
+<ion-view title="{{entry.fields.question}}">
+  <ion-content>
+    <div class="card">
+      <div class="item item-text-wrap">
+        <div class="faq-det-title">{{entry.fields.question}}</div>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image faq-image" ng-if="entry.fields.image" src="http:{{entry.fields.image.fields.file.url}}">
+        {{entry.fields.answer}}
+        <p class="subdued">{{entry.fields.output.updatedAt}}</p>
+      </div>
+
+    </div>
+    <div class="placeholder">&nbsp;</div>
+  </ion-content>
+</ion-view>

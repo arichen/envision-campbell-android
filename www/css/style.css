@@ -1,0 +1,189 @@
+/* Empty. Add your own CSS if you like */
+
+* {
+  font-family: sans-serif;
+}
+
+.pane {
+  background: #F7F3EF;
+}
+
+.bar-positive {
+  background: #1B5E20 !important;
+}
+
+.center {
+  margin: auto;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.spinner-wrapper {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.ec-banner-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.ec-banner {
+  width: 75%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.ec-menu-row {
+  width: 72%;
+  color: #d53d37;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.ec-menu-icon {
+  width: 80%;
+  max-width: 150px;
+  min-width: 50px;
+  padding: 5px;
+}
+
+.ec-menu-title {
+  font-size: 16px;
+}
+
+.doc-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.doc-date {
+  font-size: 14px;
+  color: #ADADAD;
+}
+
+.doc-icon {
+  margin-right: 10px;
+}
+
+.doc-icon div {
+  width: 50px;
+  line-height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ic-doc, .ic-docx {
+  border-color: #5491F2;
+  color: #5491F2;
+}
+
+.ic-ppt, .ic-pptx {
+  border-color: #F2B737;
+  color: #F2B737;
+}
+
+.ic-xls, .ic-xlsx {
+  border-color: #26A162;
+  color: #26A162;
+}
+
+.ic-pdf {
+  border-color: #D53D37;
+  color: #D53D37;
+}
+
+.ic-mp4 {
+  border-color: #145252;
+  color: #145252;
+}
+
+.ic-file {
+  border-color: #673AB7;
+  color: #673AB7;
+}
+
+.cal-date {
+  width: 50px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cal-month {
+  font-size: 16px;
+  color: #D53D37;
+  margin-top: 8px;
+}
+
+.cal-day {
+  margin-top: 8px;
+  font-size: 38px;
+  color: #000000;
+}
+
+.cal-item .item-content {
+  padding: 5px !important;
+}
+
+.cal-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.cal-address {
+  font-size: 16px;
+  color: #616161;
+  margin-bottom: 2px;
+}
+
+.cal-time {
+  font-size: 16px;
+  color: #ADADAD;
+}
+
+.evt-title, .faq-det-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.faq-image {
+  margin-bottom: 10px;
+}
+
+.staff-image {
+  width: 100%;
+}
+
+#map {
+  height: 200px;
+}
+
+/* debugging */
+.debug, .debug-red {
+  background: red;
+}
+
+.debug-yellow {
+  background: yellow;
+}
+
+.placeholder {
+  line-height: 1px;
+}

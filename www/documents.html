@@ -1,0 +1,58 @@
+<ion-view title="Documents">
+  <ion-content>
+    <div ng-hide="entries" class="spinner-wrapper">
+      <ion-spinner icon="ripple"></ion-spinner>
+    </div>
+
+    <ion-list ng-show="entries">
+      <ion-item class="card item-text-wrap" ng-repeat="entry in entries" ng-click="selectedItem(entry)">
+
+        <table width="100%">
+          <tr>
+            <td class="padding-top padding-bottom vertical-align-middle" width="60px">
+              <div class="center doc-icon" ng-switch="entry.fields.file.fields.file.contentType">
+                <div class="ic-doc" ng-switch-when="application/msword">doc</div>
+                <div class="ic-docx" ng-switch-when="application/vnd.openxmlformats-officedocument.wordprocessingml.document">docx</div>
+                <div class="ic-xls" ng-switch-when="application/vnd.ms-excel">xls</div>
+                <div class="ic-xlsx" ng-switch-when="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">xlsx</div>
+                <div class="ic-ppt" ng-switch-when="application/vnd.ms-powerpoint">ppt</div>
+                <div class ="ic-pptx" ng-switch-when="application/vnd.openxmlformats-officedocument.presentationml.presentation">pptx</div>
+                <div class="ic-pdf" ng-switch-when="application/pdf">pdf</div>
+                <div class="ic-mp4" ng-switch-when="video/mp4">mp4</div>
+                <div class="ic-file" ng-switch-default>file</div>
+              </div>
+            </td>
+
+            <td class="padding-top padding-bottom vertical-align-middle">
+              <div class="doc-title">{{entry.fields.title}}</div>
+              <div class="doc-date">{{entry.fields.output.updatedAt}}</div>
+            </td>
+          </tr>
+        </table>
+
+<!--
+        <div class="row">
+
+          <div class="col- center doc-icon" ng-switch="entry.fields.file.fields.file.contentType">
+            <div class="ic-doc" ng-switch-when="application/msword">doc</div>
+            <div class="ic-docx" ng-switch-when="application/vnd.openxmlformats-officedocument.wordprocessingml.document">docx</div>
+            <div class="ic-xls" ng-switch-when="application/vnd.ms-excel">xls</div>
+            <div class="ic-xlsx" ng-switch-when="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">xlsx</div>
+            <div class="ic-ppt" ng-switch-when="application/vnd.ms-powerpoint">ppt</div>
+            <div class ="ic-pptx" ng-switch-when="application/vnd.openxmlformats-officedocument.presentationml.presentation">pptx</div>
+            <div class="ic-pdf" ng-switch-when="application/pdf">pdf</div>
+            <div class="ic-file" ng-switch-default>file</div>
+          </div>
+
+          <div class="col">
+            <div class="doc-title">{{entry.fields.title}}</div>
+            <div class="doc-date">{{entry.fields.output.updatedAt}}</div>
+          </div>
+
+        </div>
+ -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

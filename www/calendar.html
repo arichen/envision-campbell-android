@@ -1,0 +1,47 @@
+<ion-view title="Calendar">
+  <ion-content>
+    <div ng-hide="entries" class="spinner-wrapper">
+      <ion-spinner icon="ripple"></ion-spinner>
+    </div>
+
+    <ion-list ng-show="entries">
+      <ion-item class="card item-text-wrap cal-item" ng-repeat="entry in entries" href="#/event/{{entry.sys.id}}">
+
+        <table width="100%">
+          <tr>
+            <td class="padding-top padding-bottom vertical-align-middle" width="80px">
+              <div class="center cal-date">
+                <div class="cal-day">{{entry.fields.startTimeOutput.day}}</div>
+                <div class="cal-month">{{entry.fields.startTimeOutput.month}}</div>
+              </div>
+            </td>
+
+            <td class="padding-top padding-bottom vertical-align-middle">
+              <div class="">
+                <div class="cal-title">{{entry.fields.title}}</div>
+                <div class="cal-address">{{entry.fields.address}}</div>
+                <div class="cal-time">{{entry.fields.startTimeOutput.time}}</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+<!--
+        <div class="row">
+          <div class="col- center cal-date">
+            <div class="cal-day">{{entry.fields.startTimeOutput.day}}</div>
+            <div class="cal-month">{{entry.fields.startTimeOutput.month}}</div>
+          </div>
+
+          <div class="col">
+            <div class="cal-title">{{entry.fields.title}}</div>
+            <div class="cal-address">{{entry.fields.address}}</div>
+            <div class="cal-time">{{entry.fields.startTimeOutput.time}}</div>
+          </div>
+        </div>
+ -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

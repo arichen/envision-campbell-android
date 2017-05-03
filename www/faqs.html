@@ -1,0 +1,18 @@
+<ion-view title="FAQ">
+  <ion-content>
+    <div ng-hide="entries" class="spinner-wrapper">
+      <ion-spinner icon="ripple"></ion-spinner>
+    </div>
+
+    <div ng-show="entries">
+      <img class="staff-image" src="img/citystaff.png" />
+      <ion-list>
+        <ion-item class="item item-text-wrap item-icon-left" ng-repeat="entry in entries" href="#/faq/{{entry.sys.id}}">
+          <i class="icon ion-help-circled"></i>
+          {{entry.fields['question']}}
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>
+

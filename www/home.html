@@ -1,0 +1,45 @@
+<ion-view title="Envision Campbell" hide-nav-bar="false">
+  <ion-content>
+
+    <div class="ec-banner-wrapper">
+      <img class="ec-banner center" src="img/envision-campbell.png" />
+    </div>
+
+    <div class="row ec-menu-row center">
+      <div class="col center item-image" ui-sref="documents">
+        <div class="ec-menu-icon center"><img src="img/icon-documents.png" /></div>
+        <div class="ec-menu-title">Documents</div>
+      </div>
+      <div class="col-10"></div>
+      <div class="col item-image center" ui-sref="calendar">
+        <div class="ec-menu-icon center"><img src="img/icon-events.png" /></div>
+        <div class="ec-menu-title">Calendar</div>
+      </div>
+    </div>
+
+    <div class="row ec-menu-row center">
+      <div class="col center item-image" ng-click="openDiscussion()">
+        <div class="ec-menu-icon center"><img src="img/icon-discussion.png" /></div>
+        <div class="ec-menu-title">Discussion</div>
+      </div>
+      <div class="col-10"></div>
+      <div class="col item-image center" ui-sref="faqs">
+        <div class="ec-menu-icon center"><img src="img/icon-faq.png" /></div>
+        <div class="ec-menu-title">FAQ</div>
+      </div>
+    </div>
+
+    <div class="row ec-menu-row center">
+      <div class="col center item-image" ng-click="mailTo('AskEnvisionCampbell@cityofcampbell.com')">
+        <div class="ec-menu-icon center"><img src="img/icon-email.png" /></div>
+        <div class="ec-menu-title">Email</div>
+      </div>
+      <div class="col-10"></div>
+      <div class="col item-image center">
+        <div class="ec-menu-icon center" ng-click="openWebsite()"><img src="img/icon-website.png" /></div>
+        <div class="ec-menu-title">Website</div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
